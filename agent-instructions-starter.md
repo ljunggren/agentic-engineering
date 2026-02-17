@@ -58,6 +58,20 @@
 - **GitHub Copilot:** Reference in your prompt or workspace instructions
 - **ChatGPT/Claude web:** Paste at the start of your conversation
 
+## What Comes Next
+
+This starter file is step one. As your AI collaboration matures, you'll want to break it out into a full `.agent/` directory with specialized files:
+
+1. **Escalation levels** — Define when AI should proceed autonomously vs. stop and ask (not everything is equal risk)
+2. **Run scripts** — One command each for build, test, deploy — so your AI can fail safely and you can recover in 30 seconds
+3. **Testing strategy** — Make your AI write tests first, not as an afterthought
+4. **Read-only policies** — Protect specs, schemas, and configs from "helpful" AI edits
+5. **Decision flows** — Visual diagrams for recurring decisions (commit? escalate? refactor?)
+6. **Anti-pattern log** — When your AI makes a mistake, write it down so it never happens twice
+7. **Session memory** — Context that carries across sessions instead of cold-starting every time
+
+Each of these will be published as a standalone file in this repo. Follow along on [LinkedIn](https://www.linkedin.com/in/matsljunggren/) for the context and war stories behind each one.
+
 ---
 
 *Created by [Mats Ljunggren](https://www.linkedin.com/in/matsljunggren/) — agentic engineering methodology from daily production use across 10+ repos.*
