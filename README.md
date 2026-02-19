@@ -12,6 +12,8 @@ Each file is self-contained. Copy it into your project, point your AI at it, and
 
 | File | What It Does |
 |------|-------------|
+| [agent-instructions-starter.md](agent-instructions-starter.md) | Give your AI context and boundaries from the first message |
+| [custom-commands-memory.md](custom-commands-memory.md) | Session commands, memory files — end the cold start |
 | [escalation-levels.md](escalation-levels.md) | Defines when AI should proceed, inform, propose, or stop |
 
 *More files shipping weekly. Follow [Mats Ljunggren on LinkedIn](https://www.linkedin.com/in/matsljunggren/) for context and war stories behind each one.*
@@ -26,6 +28,6 @@ Each file is self-contained. Copy it into your project, point your AI at it, and
 
 ## About
 
-Built by [Mats Ljunggren](https://www.linkedin.com/in/matsljunggren/) from daily production use across 10+ repos. 22 years of enterprise IT, now focused on making human-AI collaboration reliable, repeatable, and safe.
+Built by [Mats Ljunggren](https://www.linkedin.com/in/matsljunggren/) from daily production use across 17 repos. 22 years of enterprise IT, now focused on making human-AI collaboration reliable, repeatable, and safe.
 
 This isn't theory. Every file here comes from real work — bugs caught, incidents prevented, methodology refined through actual shipping.
