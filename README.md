@@ -25,6 +25,7 @@ Each file is self-contained. Copy it into your project, point your AI at it, and
 | [Custom Commands & Memory](custom-commands-memory.md) | Session commands, memory files — end the cold start |
 | [Escalation Levels](escalation-levels.md) | Defines when AI should proceed, inform, propose, or stop |
 | [Shared Context](shared-context.md) | Commit AI memory to the repo — team-wide compounding |
+| [CLAUDE-template.md](CLAUDE-template.md) | Entry point for Claude Code — copy to CLAUDE.md |
 
 See **[index.md](index.md)** for a structured overview with descriptions and suggested reading order.
 

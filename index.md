@@ -28,6 +28,7 @@ Commit your AI's memory to the repo. Every bug someone catches makes everyone's 
 | [escalation-levels.md](escalation-levels.md) | Risk-based autonomy levels | Low — customize examples to your domain |
 | [custom-commands-memory.md](custom-commands-memory.md) | Persistent memory across sessions | Medium — requires directory setup |
 | [shared-context.md](shared-context.md) | Team-wide AI memory via version control | Medium — builds on custom commands |
+| [CLAUDE-template.md](CLAUDE-template.md) | Entry point for Claude Code | Low — copy to CLAUDE.md |
 
 ---
 
@@ -49,7 +50,7 @@ project-root/
         └── journal.md
 ```
 
-`CLAUDE.md` points your AI to `.agent/` and is auto-loaded by Claude Code. Other tools (Cursor, Copilot) have their own entry points — see [agent-instructions-starter.md](agent-instructions-starter.md) for tool-specific setup.
+Start with [CLAUDE-template.md](CLAUDE-template.md) for your `CLAUDE.md` — it's auto-loaded by Claude Code and points to `.agent/`. Other tools (Cursor, Copilot) have their own entry points — see [agent-instructions-starter.md](agent-instructions-starter.md) for tool-specific setup.
 
 The files reference each other but work independently — use one or use all.
 
