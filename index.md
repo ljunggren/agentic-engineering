@@ -33,21 +33,23 @@ Commit your AI's memory to the repo. Every bug someone catches makes everyone's 
 
 ## How to Use These Together
 
-Set up a `.agent/` directory in your project root:
+Set up a `CLAUDE.md` and `.agent/` directory in your project root:
 
 ```
-.agent/
-├── instructions.md      ← from agent-instructions-starter.md
-├── escalation-levels.md ← copied directly
-├── commands.md          ← from custom-commands-memory.md
-├── context/             ← from shared-context.md (committed, shared)
-└── memory/
-    ├── anti-patterns.md
-    ├── context.md
-    └── journal.md
+project-root/
+├── CLAUDE.md                ← entry point, auto-loaded by Claude Code
+└── .agent/
+    ├── instructions.md      ← from agent-instructions-starter.md
+    ├── escalation-levels.md ← copied directly
+    ├── commands.md          ← from custom-commands-memory.md
+    ├── context/             ← from shared-context.md (committed, shared)
+    └── memory/
+        ├── anti-patterns.md
+        ├── context.md
+        └── journal.md
 ```
 
-Then tell your AI: *"Read everything in `.agent/` before starting."*
+`CLAUDE.md` points your AI to `.agent/` and is auto-loaded by Claude Code. Other tools (Cursor, Copilot) have their own entry points — see [agent-instructions-starter.md](agent-instructions-starter.md) for tool-specific setup.
 
 The files reference each other but work independently — use one or use all.
 
