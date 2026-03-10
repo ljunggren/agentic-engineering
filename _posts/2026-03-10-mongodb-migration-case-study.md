@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "We Upgraded MongoDB Four Major Versions in About 8 Hours of Actual Work"
+title: "MongoDB 4 → 8 in About 8 Hours of Actual Work"
 date: 2026-03-10
 author: Mats Ljunggren
 ---
