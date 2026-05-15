@@ -59,9 +59,10 @@ title: Agent Instructions Starter
 ### Tool-specific setup
 
 - **Claude Code:** Place as `CLAUDE.md` in your project root (loaded automatically)
-- **Cursor:** Add to `.cursorrules` in your project root
-- **GitHub Copilot:** Reference in your prompt or workspace instructions
-- **ChatGPT/Claude web:** Paste at the start of your conversation
+- **Cursor:** Place as `.cursorrules` in your project root (loaded automatically)
+- **Windsurf:** Place as `.windsurfrules` in your project root
+- **Cline / Roo:** Reference in system prompt or workspace settings
+- **Aider:** Pass with `--read .agent/instructions.md`
 
 ## What Comes Next
 
