@@ -24,6 +24,7 @@ Each file is self-contained. Copy it into your project, point your AI at it, and
 | File | What It Does |
 |------|-------------|
 | [Agent Instructions Starter](setup/agent-instructions-starter.md) | Give your AI context and boundaries from the first message |
+| [Engineering Principles](setup/principles.md) | Core beliefs — pair mode, verification rate, module boundaries |
 | [AGENTS.md — Single Source of Truth](setup/agents-md.md) | One file every tool reads — CLAUDE.md as a symlink |
 | [Escalation Levels](setup/escalation-levels.md) | Defines when AI should proceed, inform, propose, or stop |
 | [Team Roles](setup/team-roles.md) | Scout, Propose, Decide — clear roles for human-AI teams |
