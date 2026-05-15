@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 40px 48px;
+    max-width: 680px;
+    width: 100%;
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }
+  .header {
+    color: #8b949e;
+    font-size: 13px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+  .title {
+    color: #f0f6fc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    line-height: 1.3;
+  }
+  .section-label {
+    color: #79c0ff;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+  }
+  .table {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .table-row {
+    display: flex;
+    padding: 6px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    border-bottom: 1px solid #21262d;
+  }
+  .table-row:last-child { border-bottom: none; }
+  .table-header {
+    color: #8b949e;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+  }
+  .col-time {
+    width: 60px;
+    flex-shrink: 0;
+    color: #7ee787;
+    font-weight: 600;
+  }
+  .col-action {
+    color: #e6edf3;
+    flex: 1;
+  }
+  .col-signal {
+    width: 180px;
+    flex-shrink: 0;
+    color: #d2a8ff;
+    font-weight: 600;
+  }
+  .col-desc {
+    color: #8b949e;
+    flex: 1;
+  }
+  .divider {
+    border-top: 1px solid #30363d;
+    margin: 24px 0;
+  }
+  .principle {
+    color: #8b949e;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 6px;
+  }
+  .principle .arrow { color: #7ee787; }
+  .principle .key { color: #e6edf3; }
+  .footer {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">AGENTIC ENGINEERING — WELLBEING</div>
+  <div class="title">Your AI Should Know When You Need a Break</div>
+
+  <div class="section-label">SESSION DURATION</div>
+  <div class="table">
+    <div class="table-row table-header">
+      <div class="col-time">Time</div>
+      <div class="col-action">Agent response</div>
+    </div>
+    <div class="table-row">
+      <div class="col-time">2h</div>
+      <div class="col-action">No action</div>
+    </div>
+    <div class="table-row">
+      <div class="col-time">3h</div>
+      <div class="col-action">"We're at 3 hours — doing okay?"</div>
+    </div>
+    <div class="table-row">
+      <div class="col-time">4h+</div>
+      <div class="col-action">"We've been going 4+ hours. Good time for a break?"</div>
+    </div>
+    <div class="table-row">
+      <div class="col-time">6h+</div>
+      <div class="col-action">"Long session. Quality tends to drop past this point."</div>
+    </div>
+  </div>
+
+  <div class="section-label">INPUT QUALITY SIGNALS</div>
+  <div class="table">
+    <div class="table-row">
+      <div class="col-signal">Spelling degradation</div>
+      <div class="col-desc">Increasing typos, missing words</div>
+    </div>
+    <div class="table-row">
+      <div class="col-signal">Terse instructions</div>
+      <div class="col-desc">Messages getting noticeably shorter</div>
+    </div>
+    <div class="table-row">
+      <div class="col-signal">Rapid-fire approvals</div>
+      <div class="col-desc">"yes", "do it", "fine", "whatever"</div>
+    </div>
+    <div class="table-row">
+      <div class="col-signal">Scope explosion</div>
+      <div class="col-desc">"While we're at it, let's also..."</div>
+    </div>
+    <div class="table-row">
+      <div class="col-signal">Frustration loops</div>
+      <div class="col-desc">Repeating the same failed approach</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="principle"><span class="arrow">→</span> <span class="key">Mention once, then drop it.</span> Never nag.</div>
+  <div class="principle"><span class="arrow">→</span> <span class="key">Observe, don't diagnose.</span> "Messages getting shorter" — not "you seem tired."</div>
+  <div class="principle"><span class="arrow">→</span> <span class="key">Never block work.</span> Awareness, not enforcement.</div>
+
+  <div class="footer">github.com/ljunggren/agentic-engineering</div>
+</div>
+</body>
+</html>

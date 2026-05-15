@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 40px 48px;
+    max-width: 720px;
+    width: 100%;
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }
+  .header {
+    color: #8b949e;
+    font-size: 13px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+  .title {
+    color: #f0f6fc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.25;
+  }
+  .subtitle {
+    color: #8b949e;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 28px;
+  }
+  .diff {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 16px 20px;
+    font-size: 13px;
+    line-height: 1.85;
+  }
+  .diff-header {
+    color: #8b949e;
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  .line { display: block; }
+  .minus { color: #f85149; background: rgba(248,81,73,0.10); }
+  .plus  { color: #7ee787; background: rgba(46,160,67,0.12); }
+  .ctx   { color: #8b949e; }
+  .footer {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .repo { color: #8b949e; }
+  .footer .tag  { color: #7ee787; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">AGENTIC ENGINEERING — POST 5</div>
+  <div class="title">How Do You Like Them Apples?</div>
+  <div class="subtitle">Three skill gaps a year of shipping didn't surface</div>
+  <div class="diff">
+    <div class="diff-header">--- a/my-llm-practice.md</div>
+    <div class="diff-header">+++ b/my-llm-practice.md</div>
+    <span class="line ctx">@@ prompt engineering @@</span>
+    <span class="line minus">- eyeball it, run it 5 times, ship if it feels right</span>
+    <span class="line plus">+ golden datasets, judge prompts, regression checks</span>
+    <span class="line ctx">@@ MCP server debugging @@</span>
+    <span class="line minus">- unit tests + tail the logs when something broke</span>
+    <span class="line plus">+ unit tests + the MCP Inspector (a Postman for MCP)</span>
+    <span class="line ctx">@@ agentic workflow design @@</span>
+    <span class="line minus">- shipped working code, flying blind on the design</span>
+    <span class="line plus">+ workflows vs. agents — chaining, routing, parallelization</span>
+  </div>
+  <div class="footer">
+    <span class="repo">ljunggren.github.io/agentic-engineering</span>
+    <span class="tag">autodidact → craft</span>
+  </div>
+</div>
+</body>
+</html>

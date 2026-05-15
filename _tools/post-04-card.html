@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 40px 48px;
+    max-width: 680px;
+    width: 100%;
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }
+  .header {
+    color: #8b949e;
+    font-size: 13px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+  .title {
+    color: #f0f6fc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    line-height: 1.3;
+  }
+  .levels {
+    color: #e6edf3;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .level {
+    margin-bottom: 12px;
+  }
+  .level-tag {
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 1px 8px;
+    font-size: 13px;
+    margin-right: 8px;
+  }
+  .l0 .level-tag { background: #238636; color: #f0f6fc; }
+  .l1 .level-tag { background: #1f6feb; color: #f0f6fc; }
+  .l2 .level-tag { background: #d29922; color: #0d1117; }
+  .l3 .level-tag { background: #da3633; color: #f0f6fc; }
+  .level-name { color: #f0f6fc; font-weight: 600; }
+  .level-desc { color: #8b949e; }
+  .calibration {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .calibration .highlight { color: #7ee787; }
+  .footer {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">AGENTIC ENGINEERING — POST 4</div>
+  <div class="title">Escalation Levels: Calibrate Your AI's Autonomy</div>
+  <div class="levels">
+    <div class="level l0"><span class="level-tag">L0</span> <span class="level-name">Autonomous</span> <span class="level-desc">— just do it</span></div>
+    <div class="level l1"><span class="level-tag">L1</span> <span class="level-name">Do it, tell me</span> <span class="level-desc">— proceed, then explain</span></div>
+    <div class="level l2"><span class="level-tag">L2</span> <span class="level-name">Propose first</span> <span class="level-desc">— plan it, wait for approval</span></div>
+    <div class="level l3"><span class="level-tag">L3</span> <span class="level-name">Full stop</span> <span class="level-desc">— flag the risk, decide together</span></div>
+  </div>
+  <div class="calibration">
+    <span class="highlight">Hobby project?</span> You probably don't need L3.<br>
+    <span class="highlight">Production SaaS?</span> Almost nothing without a human in the loop.<br><br>
+    One page per repo. Calibrate to your stakes.
+  </div>
+  <div class="footer">github.com/ljunggren/agentic-engineering</div>
+</div>
+</body>
+</html>
