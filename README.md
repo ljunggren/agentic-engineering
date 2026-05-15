@@ -27,6 +27,7 @@ Each file is self-contained. Copy it into your project, point your AI at it, and
 | [Engineering Principles](setup/principles.md) | Core beliefs — pair mode, verification rate, module boundaries |
 | [AGENTS.md — Single Source of Truth](setup/agents-md.md) | One file every tool reads — CLAUDE.md as a symlink |
 | [Escalation Levels](setup/escalation-levels.md) | Defines when AI should proceed, inform, propose, or stop |
+| [MCP Setup](setup/mcp.md) | Give your AI a browser and tools — Playwright as the standard example |
 | [Team Roles](setup/team-roles.md) | Scout, Propose, Decide — clear roles for human-AI teams |
 | [Shared Context](setup/shared-context.md) | Commit AI memory to the repo — team-wide compounding |
 

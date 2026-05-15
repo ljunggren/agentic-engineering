@@ -23,10 +23,13 @@ Define when your AI should proceed autonomously, inform you after acting, propos
 ### 4. [AGENTS.md — Single Source of Truth](setup/agents-md.md)
 One file every tool reads. `CLAUDE.md` becomes a symlink to `AGENTS.md` — no duplication, no drift between tools.
 
-### 5. [Shared Context](setup/shared-context.md)
+### 5. [MCP Setup](setup/mcp.md)
+Give your AI a browser and external tools. Playwright MCP is the standard starting point — browser navigation, screenshots, UI verification. Commit `.mcp.json` to the repo so every developer's AI gets the same tools.
+
+### 6. [Shared Context](setup/shared-context.md)
 Commit your AI's memory to the repo. Every bug someone catches makes everyone's AI smarter. Every architectural decision is context, not tribal knowledge.
 
-### 6. [Team Roles](setup/team-roles.md)
+### 7. [Team Roles](setup/team-roles.md)
 For teams: Scout, Propose, Decide — clear roles so the AI never decides what humans should decide, and humans never block what AI should do.
 
 ---
@@ -39,6 +42,7 @@ For teams: Scout, Propose, Decide — clear roles so the AI never decides what h
 | [principles.md](setup/principles.md) | Core beliefs — pair mode, verification rate, boundaries, feedback | Low — feed as context |
 | [escalation-levels.md](setup/escalation-levels.md) | Risk-based autonomy levels | Low — customize to your domain |
 | [agents-md.md](setup/agents-md.md) | AGENTS.md as single source of truth, CLAUDE.md symlink | Low — one command to set up |
+| [mcp.md](setup/mcp.md) | MCP setup — Playwright as the standard example | Low — copy `.mcp.json`, done |
 | [shared-context.md](setup/shared-context.md) | Team-wide AI memory via version control | Medium — builds on instructions |
 | [team-roles.md](setup/team-roles.md) | Scout, Propose, Decide — roles for human-AI teams | Low — read and adapt |
 
