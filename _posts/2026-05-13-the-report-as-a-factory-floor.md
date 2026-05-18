@@ -71,6 +71,4 @@ The pipeline is diagrammed at [setup/document-pipeline](/agentic-engineering/set
 
 ---
 
-**Next in this series:** how the claim-type schema catches the specific hallucinations that slip through every other check, and why most "AI made up a number" stories are actually a labelling problem dressed up as a truth problem.
-
 What's your current mechanism for catching category errors in analytical outputs before they ship?
