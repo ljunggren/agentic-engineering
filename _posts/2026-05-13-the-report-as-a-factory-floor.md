@@ -13,7 +13,9 @@ That distinction is the whole point of this post.
 
 <!--more-->
 
-<!--more-->
+The more I work with LLMs, the more I realise the classics are still right. Goldratt (*The Goal*), Gene Kim (*The Phoenix Project*), Humble and Farley (*Continuous Delivery*), Deming: the frameworks they gave us don't become obsolete when you introduce AI. They become more useful, because now the system is moving faster and at higher throughput, a broken process breaks faster.
+
+Continuing my article series on applying these frameworks to AI-assisted work. The first article was about delivery constraints: where the bottleneck moves when you accelerate code generation. This one is about a different problem: how do you use LLMs to produce reliable documents (reports, analyses, deliverables) without losing control of what's true?
 
 ## The blank page is a symptom
 
@@ -68,6 +70,14 @@ The core of the factory is `schemas/finding.schema.json`, a short JSON schema th
 That schema is the load-bearing piece. Everything else (the prompts, the lenses, the rubric, the stages) is infrastructure around the constraint that schema enforces.
 
 The pipeline is diagrammed at [setup/document-pipeline](/agentic-engineering/setup/document-pipeline/).
+
+## The pattern underneath the pattern
+
+Generative design in aerospace throws away the single best solution and lets an algorithm explore thousands of shapes instead. Monte Carlo simulation runs the same process many times with randomised inputs to understand the range of possible outcomes, not just the expected one. The lean manufacturing gemba walk says: go to the actual place, look at the actual material, don't trust the report about it.
+
+The same instinct belongs in any analytical pipeline. Don't optimise too early. Stay close to the source. Let variance reveal things that a single pass misses.
+
+The factory is not a machine for producing one answer. It's a machine for exploring the space of defensible answers and surfacing the best one.
 
 ---
 
